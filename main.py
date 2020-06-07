@@ -1,6 +1,7 @@
 from tkinter import *
 letters="abcdefghijklmnopqrstuvwxyz"
 #Takes in a phrase and a shift int and shifts every letter in the phrase
+#Also handles invalid input
 def begin_cipher(phrase_entry,shift_entry):
     try:
         shift=int(shift_entry.get())
