@@ -1,5 +1,6 @@
 from tkinter import *
 letters="abcdefghijklmnopqrstuvwxyz"
+#Takes in a phrase and a shift int and shifts every letter in the phrase
 def begin_cipher(phrase_entry,shift_entry):
     try:
         shift=int(shift_entry.get())
@@ -19,6 +20,7 @@ def begin_cipher(phrase_entry,shift_entry):
         Ciphered.configure(text=new_phrase)
     except:
         Ciphered.configure(text="invalid entry, please enter a valid phrase and a valid integer")
+#This chunk of code sets up the GUI
 window=Tk()
 window.resizable(False, False)
 window.title("Ceasar Cipher")
